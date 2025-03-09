@@ -19,10 +19,10 @@ const Education = () => {
             title="Grade 1 to 11"
             subTitle="St. Lawrences Convent, Colombo 06"
             result="G.C.E O/L results 2016"
-            des="The training provided by universities in order to prepare people to work in various sectors of the economy or areas of culture."
+            des="Passed G.C.E O/L Exams with 08A's and 01C's"
           />
           <ResumeCard
-            title="AS - Science & Information"
+            title=""
             subTitle="SuperKing College (2001 - 2005)"
             result="4.75/5"
             des="Higher education is tertiary education leading to award of an academic degree. Higher education, also called post-secondary education."
