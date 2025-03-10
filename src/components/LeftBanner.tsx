@@ -41,7 +41,7 @@ const LeftBanner = () => {
   return (
     <FadeIn className="w-full lgl:w-1/2 flex flex-col gap-20">
       <div className="flex flex-col gap-5">
-        <h4 className=" text-lg font-normal">WELCOME TO MY WORLD</h4>
+        <h4 className=" text-lg font-normal">WELCOME TO MY WEBSITE</h4>
         <h1 className="text-6xl font-bold text-white">
           Hi, I'm <span className="text-designColor capitalize">Dewmi Silva</span>
         </h1>
