@@ -1,5 +1,5 @@
 import { FadeIn } from "./FadeIn";
-import {dewmi} from "../assets/images/dewmi.png"
+import dewmi from "../assets/images/dewmi.png"; // Corrected import statement
 
 const RightBanner = () => {
   return (

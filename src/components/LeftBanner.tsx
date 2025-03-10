@@ -2,6 +2,7 @@ import { useTypewriter, Cursor } from "react-simple-typewriter";
 import { FaFacebookF, FaLinkedinIn, FaReact, FaGithub } from "react-icons/fa";
 import { SiTailwindcss, SiFigma, SiNextdotjs } from "react-icons/si";
 import { FadeIn } from "./FadeIn";
+import { useEffect } from "react";
 
 const LeftBanner = () => {
   const [text] = useTypewriter({
@@ -10,7 +11,33 @@ const LeftBanner = () => {
     typeSpeed: 20,
     deleteSpeed: 10,
     delaySpeed: 2000,
+
   });
+
+
+ 
+
+  useEffect(() => {
+    // Inject the chatbot script dynamically
+    const script = document.createElement("script");
+    script.src = "https://chatling.ai/js/embed.js";
+    script.async = true;
+    script.dataset.id = "3564439528";  // Ensure the ID is correct
+    script.id = "chatling-embed-script";
+    document.body.appendChild(script);
+  
+    // Set the chatbot configuration
+    window.chtlConfig = { chatbotId: "3564439528" };  // Ensure this matches the dataset.id
+  
+    // Cleanup the script when component unmounts
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
+  
+
+
+
   return (
     <FadeIn className="w-full lgl:w-1/2 flex flex-col gap-20">
       <div className="flex flex-col gap-5">
@@ -74,6 +101,9 @@ const LeftBanner = () => {
         </div>
       </div>
     </FadeIn>
+
+    
+
   );
 };
 
